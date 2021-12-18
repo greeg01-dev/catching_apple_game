@@ -26,7 +26,7 @@ pub fn spawn_apple(
             })
             .insert(Apple);
 
-            cooldown.0 = rand::thread_rng().gen_range(3.0..=5.0); // make the cooldown to random value from 3.0 to 5.0
+            cooldown.0 = rand::thread_rng().gen_range(1.0..=3.0); // make the cooldown to random value from 3.0 to 5.0
     }
     else {
         cooldown.0 -= time.delta_seconds(); // update the timer

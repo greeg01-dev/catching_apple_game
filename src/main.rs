@@ -18,5 +18,6 @@ fn main() {
         .add_startup_system(system::setup::spawn_basket.system())
         .add_system(system::spawn_apple.system())
         .add_system(system::move_basket.system())
+        .add_system(system::move_apple.system())
         .run();
 }
