@@ -7,6 +7,7 @@ pub fn update_score_text(
     score: Res<Score>
 ) {
     let mut score_text = score_text_query.single_mut().unwrap();
+    // update score_text if it differs from current score
     if score_text.sections[0].value != format!("{}", score.0) {
         score_text.sections[0].value = format!("{}", score.0);
     }
