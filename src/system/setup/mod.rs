@@ -2,9 +2,11 @@ use bevy::prelude::Commands;
 
 mod spawn_camera;
 mod spawn_basket;
+mod spawn_score_text;
 
 pub use spawn_camera::*;
 pub use spawn_basket::*;
+pub use spawn_score_text::*;
 
 pub struct SpawnAppleCooldown(pub f32);
 pub struct Score(pub u8);

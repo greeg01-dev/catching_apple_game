@@ -16,9 +16,11 @@ fn main() {
         .add_startup_system(system::setup::setup.system())
         .add_startup_system(system::setup::spawn_camera.system())
         .add_startup_system(system::setup::spawn_basket.system())
+        .add_startup_system(system::setup::spawn_score_text.system())
         .add_system(system::spawn_apple.system())
         .add_system(system::move_basket.system())
         .add_system(system::move_apple.system())
         .add_system(system::catch_apple.system())
+        .add_system(system::update_score_text.system())
         .run();
 }
