@@ -12,7 +12,7 @@ pub fn spawn_basket(
         .spawn_bundle(SpriteBundle {
             material: materials.add(asset_server.load("sprite/basket.png").into()),
             transform: Transform {
-                translation: Vec3::new(0.0, -224.0, 0.0),
+                translation: Vec3::new(0.0, -224.0, 1.0),
                 ..Default::default()
             },
             ..Default::default()
